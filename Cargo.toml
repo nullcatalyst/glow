@@ -20,7 +20,7 @@ stdweb = ["std_web", "webgl_stdweb"]
 
 [target.'cfg(not(any(target_arch = "wasm32")))'.dependencies]
 glutin = { version = "0.24", optional = true }
-sdl2 = { version = "0.33", optional = true }
+sdl2 = { version = "0.34.2", optional = true }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 js-sys = { version = "~0.3", optional = true }
